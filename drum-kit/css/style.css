@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: url("/drum-kit/img/bg.jpg") no-repeat center ;
+    background-size: cover;
+    
+}
+
+.keys{
+    position: relative;
+    top: 50%;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.key{
+    border: 2px solid #fff;
+    text-align: center;
+    margin: 0.7rem;
+    padding: 1rem;
+    color: #FADE0C;
+    width: 6rem;
+    box-shadow: inset -1px 21px 49px 67px rgba(255,255,255,0.06);
+    transition: all 0.07s;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #FADE0C;
+}
+
+kbd{
+    display: block;
+    font-size: 1.78rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: -1px 3px 14px rgba(255,255,255,0.57);
+}
+
+.keys .sound{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
